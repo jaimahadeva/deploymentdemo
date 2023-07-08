@@ -1,0 +1,56 @@
+
+<div class="col-md-6 offset-md-3">
+
+    <h3>Update  Your entry </h3>
+    <form (ngSubmit)= "onSubmit()">
+        <div class="form-group" >
+            <label> Date </label>
+            <input type="date" class="form-control" id="name1"
+                      [(ngModel)] ="employee.name1" name="name1">
+        </div>
+        
+        <div class="form-group" >
+            <label> Task Name  </label>
+            <input type="text" class="form-control" id="empid"
+                      [(ngModel)]="employee.empid" name="empid">
+        </div>
+     
+        <div class="form-group" >
+            <label> Brief descussion of the Task  </label>
+            <textarea type="text" class="form-control" id="emailId"
+                      [(ngModel)]="employee.emailId" name="emailId">
+            </textarea>
+        </div>
+    
+        <div class="form-group" >
+            <label> Status  </label>
+            <input type="text" class="form-control" id="role"
+                      [(ngModel)]="employee.role" name="role">
+        </div>
+    
+      <div class="form-group" >
+            <label> Remarks </label>
+            <textarea type="text" class="form-control" id="designation"
+                      [(ngModel)]="employee.designation" name="designation">
+            </textarea>
+        </div>
+    
+       <!-- <div class="form-group" >
+            <label> Location  </label>
+            <input type="text" class="form-control" id="location"
+                      [(ngModel)]="employee.location" name="location">
+                      
+        </div> -->
+    
+        <!-- <div class="form-group" >
+            <label> EmpId </label>
+            <input type="text" class="form-control" id="empid"
+                      [(ngModel)]="employee.empid" name="empid">
+                      
+        </div> -->
+    
+     
+    
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+    </div>

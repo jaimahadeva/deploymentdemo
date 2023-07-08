@@ -1,0 +1,157 @@
+
+ #pageTitle {
+    font-size: 20px;
+    border-bottom: 4px solid #85b0d1;
+    line-height: 25px;
+    color: #3f92d2;
+}
+
+td{
+    font:0.9em/160% Calibri, Arial, sans-serif;
+    color: #362b36;
+    text-align: left;
+}
+
+input[type=text] {
+    white-space: nowrap;
+    border-spacing: 0;
+    font: 14px Calibri;
+    color: #727272;
+    border: 1px solid #96a0b9;
+    background-color: #e0f5fd;
+    padding: 4px;
+    margin-right: 6px;
+    border-radius: 4px;
+    line-height: 15px;
+    width: 120px;
+}
+
+h3{
+    text-align: center;
+}
+
+.buttonBg{
+    font-size: 14px;
+    padding: 5px 12px;
+    cursor: pointer;
+    line-height: 15px;
+    display: inline-block;
+    text-align: center;
+    border-color: #c1c1c1;
+    border-width: 1px;
+    border-style: solid;
+    text-shadow: 1px 1px 0px #070707;
+    color: #ffffff;
+    background: linear-gradient(#1A75C9, #4FB0FA);
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+body {
+    font: 0.8em/160% Calibri, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #362b36;
+    background: #bfced9;
+    outline: 0 none;
+    vertical-align: baseline;
+}
+
+select {
+    font: 14px Calibri;
+    color: #727272;
+    border: 1px solid #96a0b9;
+    background-color: #e0f5fd;
+    padding: 4px;
+    margin-right: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    line-height: 15px;
+    width: 190px;
+}
+
+input[type="text"] {
+    font: 14px Calibri;
+    color: #727272;
+    border: 1px solid #96a0b9;
+    background-color: #e0f5fd;
+    padding: 4px;
+    margin-right: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    line-height: 15px;
+}
+
+.GridViewClass th{
+    font: 0.8em/160% Calibri, Arial, sans-serif;
+    border-spacing: 0;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 6px;
+    color: #444647;
+    background: #8fcdfc;
+    line-height: 15px;
+    text-align: left;
+    border-left: 1px solid rgb(175, 173, 173);
+    min-width: 181px;
+}
+
+#contentArea{
+    background: #f2f5f7;
+    padding: 10px 20px;
+}
+
+.txtAL {
+    text-align: left;
+}
+
+.bdrBottom {
+    border-bottom: 1px solid rgb(225, 218, 255);
+}
+
+element.style {
+    border: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+}
+
+.GridViewClass {
+    white-space: nowrap;
+    border-spacing: 0;
+    
+    text-align: left;
+    border: 1px solid #005385;
+}
+
+textarea {
+    font: 14px Calibri;
+    color: #727272;
+    border: 1px solid #96a0b9;
+    background-color: #e0f5fd;
+    padding: 4px;
+    margin-right: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    line-height: 15px;
+}
+
+
+
+
+
+

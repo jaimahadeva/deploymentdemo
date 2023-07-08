@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contentArea" style="overflow:auto;height:600px;">
+      <div id="pagetitle"> Report</div>  
+      <form #ReportForm="ngForm" method="post">
+        <div align="centre" style="overflow-y:auto">
+            <div class="divHVScroll" style="width: 10%;">
+                <table class="GridViewClass" width="10%">
+            <thead>
+                <tr *ngFor="let a of this.temp_searchvalues | paginate :{itemsPerPage:cn,currentPage:p}" >
+                    <!-- <td >{{a.val1}} </td>
+                    <td >{{a.val2}} </td> -->
+                    <!-- <th scope="col">{{a.val5}} </th> -->
+                    <th scope="col"> </th>
+                    <th scope="col">{{a.val1}} </th>
+                    <th scope="col">{{a.val2}} </th>
+                    <th scope="col">{{a.val3}} </th>
+                    <th scope="col">{{a.val4}} </th>
+                    <th scope="col">{{a.val5}} </th>
+                    <th scope="col">{{a.val6}} </th>
+                    <th scope="col">{{a.val7}} </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td style="font-size: 30px;"> </td>
+                    <!-- <td style="font-size: 30px;">{{a.val1}} </td>
+                    <td style="font-size: 30px;">{{a.val2}} </td>
+                    <td style="font-size: 30px;">{{a.val3}} </td>
+                    <td style="font-size: 30px;">{{a.val4}} </td>
+                    <td style="font-size: 30px;">{{a.val5}} </td>
+                    <td style="font-size: 30px;">{{a.val6}} </td>
+                    <td style="font-size: 30px;">{{a.val7}} </td> -->
+                     <td scope="col" style="font-size: 30px;">monday </td>
+               <td scope="col"style="font-size: 30px;">tuesday </td>
+                    <td scope="col"style="font-size: 30px;">wednesday </td>
+                    <td scope="col"style="font-size: 30px;">thursday </td>
+                    <td scope="col"style="font-size: 30px;">friday </td>
+                    <td scope="col"style="font-size: 30px;">saturday </td>
+                    <td scope="col"style="font-size: 30px;">sunday</td> 
+                </tr>
+
+
+                <tr>
+
+                    <td scope="col" style="font-size: 30px;">monday </td>
+               <td scope="col"style="font-size: 30px;"> </td>
+                    <td scope="col"style="font-size: 30px;"> </td>
+                    <td scope="col"style="font-size: 30px;"> </td>
+                    <td scope="col"style="font-size: 30px;"> </td>
+                    <td scope="col"style="font-size: 30px;"> </td>
+                    <td scope="col"style="font-size: 30px;"></td>
+                </tr>
+            </tbody>
+
+
+
+
+                </table>
+ <div class="pagination" align="right">
+
+<pagination-controls (pageChange)="p=($event)">   </pagination-controls> 
+
+<div>
+
+    <button (click)="forward()" >  NEXT    </button>
+
+    <!-- <button (click)="previous()">Prious     </button> -->
+</div>
+<!-- </div> 
+            </div>
+
+         
+        </div>
+        
+
+
+
+
+
+
+        
+      </form>
+
+
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div  id="contentArea" style="overflow:auto ;height:540px ;">
+    <form #Re="ngForm">
+     <meta http-equiv="X-UA-Compatible" content="IE-edge">
+     <div id="pageTitle">Table search page </div>
+     <input id="hdnClusterID" name="hdnClusterID" type="hidden" value="">
+     <label id="lblError" style="color: red ;"></label>
+     <table class="bdrBottom txtAL" style="width: 100%;">
+        <tbody>
+          <tr *ngIf="value_edit===false">
+              <td>
+                  <label for="EmployeeID">Employee Name </label>
+                  <label style="color:red">*</label>
+              </td>
+          
+              <td>
+                  <textarea name="EmployeeName" ngModel value="EmployeeName" cols="20" class="alphaonly" rows="2" style="width:220px;height:20px;" title="Employee Name "></textarea><br>
+              </td>
+              <td>
+                <label for="DesignationID">Designation </label>
+                <label style="color:red">*</label>
+            </td>
+        
+            <td>
+                <textarea name="Designation" ngModel value="Designation" cols="20" class="alphaonly" rows="2" style="width:220px;height:20px;" title="Designation"></textarea><br>
+            </td>
+ 
+            </tr>
+            <tr *ngIf="value_edit===false">
+                <td>
+                    <label for="RoleID">Role  </label>
+                    <label style="color:red">*</label>
+                </td>
+            
+                <td>
+                    <textarea name="Role" ngModel value="Role" cols="20" class="alphaonly" rows="2" style="width:220px;height:20px;" title="Role  "></textarea><br>
+                </td>
+                <td>
+                    <label for="LocationID">Location  </label>
+                    <label style="color:red">*</label>
+                </td>
+            
+                <td>
+                    <textarea name="Location" ngModel value="Location" cols="20" class="alphaonly" rows="2" style="width:220px;height:20px;" title="Location"></textarea><br>
+                </td>
+    </tr>
+    <tr *ngIf="value_edit===true">
+        <td>
+            <label for="EmployeeID">Employee Name </label>
+            <label style="color:red">*</label>
+        </td>
+        <td>
+            <textarea name="EmployeeName" ngModel value="{{this.employeename}}" cols="20" class="alphaonly" rows="2" style="width:220px;height:20px;" title="Employee Name "></textarea><br>
+        </td>
+        <td>
+            <label for="DesignationID">Designation </label>
+            <label style="color:red">*</label>
+        </td>
+    
+        <td>
+            <textarea name="Designation" ngModel value="{{this.designation}}" cols="20" class="alphaonly" rows="2" style="width:220px;height:20px;" title="Designation"></textarea><br>
+        </td>
+
+    </tr>
+    <tr *ngIf="value_edit===true">
+
+        <td>
+            <label for="RoleID">Role  </label>
+            <label style="color:red">*</label>
+        </td>
+    
+        <td>
+            <textarea name="Role" ngModel value="{{this.role}}" cols="20" class="alphaonly" rows="2" style="width:220px;height:20px;" title="Role  "></textarea><br>
+        </td>
+        <td>
+            <label for="LocationID">Location  </label>
+            <label style="color:red">*</label>
+        </td>
+    
+        <td>
+            <textarea name="Location" ngModel value="{{this.location}}" cols="20" class="alphaonly" rows="2" style="width:220px;height:20px;" title="Location"></textarea><br>
+        </td>
+  </tr>
+  <tr>
+       <td *ngIf="value_edit===false" style="text-align:centre ;">
+        <input type="submit" id="btnSave" class="buttonBg blue1" value="Submit" (click)="insertEmployee(SubClusterForm)" name="btnSubmit" title="Submit">
+
+      </td> 
+
+  </tr>
+   </tbody>
+ </table>
+ </form>
+
+</div>
+<li>
+    <a routerLink="/subclustermasternotes">go to the notes</a>
+</li> -->
