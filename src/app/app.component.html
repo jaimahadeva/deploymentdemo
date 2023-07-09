@@ -1,12 +1,23 @@
-<div>
-  <input type="text" placeholder="enter the first Name "><br>
-  <input type="text" placeholder="enter the last Name">
-<div>
-    <button class="primary-green" (click)="onSubmit()">submit</button>
-</div>
-<div>
-  <span *ngIf="submitted">thank you dear for using thye app   </span>
-</div>
+<div style="text-align: center;">
+  <h3  style="text-align: center;">Just try  </h3>
+  <form action="" name="myform" >
+    <div>
+     first  Name : <input type="text" name="myName">
+    </div>
+    <div>
+     last  Name : <input type="text" name="last">
+    </div>
+    <div>
+      gmail : <input type="email" name="gmail">
+    </div>
+    <div>
+      password : <input type="text" name="password">
+    </div>
+    <div>
+      password : <input type="submit" name="submit" (click)="onSubmit()">
+    </div>
+
+  </form>
 </div>
 
 <router-outlet></router-outlet>

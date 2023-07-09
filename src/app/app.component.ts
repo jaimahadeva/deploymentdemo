@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projectss';
-  submitted:boolean=false
+  submitted:boolean=false;
+
   onSubmit(){
     this.submitted=true;
+   
     alert("thank you for registration!!")
   }
 }
